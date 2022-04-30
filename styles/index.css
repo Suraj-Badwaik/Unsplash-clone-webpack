@@ -1,0 +1,22 @@
+#container{
+    --column-gutter: 24px;
+    --columns: 3;
+    row-gap: 20px;
+    width: 85%;
+    margin: auto;
+    grid-column-gap: var(--column-gutter);
+    align-items: start;
+    display: grid;
+    grid-template-columns: repeat(var(--columns),minmax(0,1fr));
+    margin-top: 10%;
+}
+
+#container div{
+    box-sizing: border-box;
+    
+}
+
+#container div img{
+    width: 100%;
+    height: 100%;
+}
